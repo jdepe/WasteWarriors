@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/homeBinCardTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bin Locator"
+                        android:textSize="16dp"
+                        android:textAlignment="center" />
+
+                    <ImageView
+                        android:id="@+id/map_placeholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="326dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/map"
+                        android:layout_gravity="center" />
+
+                    <Button
+                        android:id="@+id/btnFindBin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find a bin"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingHorizontal="48dp" />
+
+                    <Button
+                        android:id="@+id/btnReportIssue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Report an issue"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingHorizontal="48dp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/homeRewardCardTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reward Progress"
+                        android:textSize="16dp"
+                        android:textAlignment="center" />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/rewardProgress"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:indeterminate="false"
+                        app:trackThickness="12dp"
+                        app:trackColor="#B0B0B0"
+                        app:indicatorSize="200dp"
+                        app:indicatorColor="#90EE90"/>
+
+
+                    <Button
+                        android:id="@+id/btnViewRewards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Rewards"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingHorizontal="48dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_menu" />
+</RelativeLayout>
