@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Waste Warriors</string>
+
+    <string-array name="spinner_items">
+        <item>Bin Full</item>
+        <item>Bin Overflow</item>
+        <item>Bin Broken</item>
+        <item>Bin Sensor Not working</item>
+        <item>Bin Knocked Over</item>
+        <item>Bin Smells</item>
+    </string-array>
 </resources>

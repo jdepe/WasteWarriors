@@ -7,13 +7,9 @@
     <item
         android:id="@+id/nav_bin"
         android:icon="@drawable/bin"
-        android:title="Bin" />
+        android:title="Find a Bin" />
     <item
-        android:id="@+id/nav_star"
+        android:id="@+id/nav_rewards"
         android:icon="@drawable/star"
-        android:title="Star" />
-    <item
-        android:id="@+id/nav_graph"
-        android:icon="@drawable/graph"
-        android:title="Graph" />
+        android:title="Rewards" />
 </menu>

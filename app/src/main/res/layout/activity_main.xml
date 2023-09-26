@@ -8,7 +8,8 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#cbe8ba">
 
     <TextView
         android:id="@+id/title"
@@ -17,7 +18,7 @@
         android:layout_marginHorizontal="8dp"
         android:gravity="center_vertical"
         android:text="Waste Warriors"
-        android:textColor="#03A9F4"
+        android:textColor="#35424a"
         android:textSize="36sp"
         android:textStyle="bold|italic" />
 
@@ -36,10 +37,14 @@
             android:text="Login"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="#77CBF1"
+            android:textColor="@color/black"
             android:layout_marginRight="8dp"
             android:paddingHorizontal="48dp"
-            android:backgroundTint="@color/black"/>
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:elevation="2dp"
+            android:backgroundTint="#629c44"/>
 
         <Button
             android:id="@+id/btnSignup"
@@ -48,10 +53,14 @@
             android:text="Signup"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="#045F88"
+            android:textColor="@color/black"
             android:layout_marginStart="8dp"
             android:paddingHorizontal="48dp"
-            android:backgroundTint="#C6CBEEF3"/>
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:elevation="2dp"
+            android:backgroundTint="#ffa500"/>
 
     </LinearLayout>
 </LinearLayout>

@@ -6,16 +6,85 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#ebebeb">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="56dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/managementCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardElevation="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/homeAdminTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Waste Management"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_margin="16dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/btnReportedFaults"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reported Faults"
+                        android:textSize="18sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:paddingHorizontal="48dp"
+                        android:textColor="@color/black"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/black"
+                        app:elevation="2dp"
+                        android:backgroundTint="#ffa500"/>
+
+                    <Button
+                        android:id="@+id/btnRoutes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Routes"
+                        android:textSize="18sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:paddingHorizontal="48dp"
+                        android:textColor="@color/black"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/black"
+                        app:elevation="2dp"
+                        android:backgroundTint="#ffa500"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                app:cardElevation="10dp"
+                android:layout_marginTop="50dp"
                 android:layout_gravity="center_horizontal"
                 app:cardBackgroundColor="@color/white">
 
@@ -30,7 +99,10 @@
                         android:layout_height="wrap_content"
                         android:text="Bin Locator"
                         android:textSize="16dp"
-                        android:textAlignment="center" />
+                        android:textStyle="bold"
+                        android:layout_margin="16dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"/>
 
                     <ImageView
                         android:id="@+id/map_placeholder"
@@ -46,10 +118,17 @@
                         android:layout_height="wrap_content"
                         android:text="Find a bin"
                         android:textSize="18sp"
-                        android:textStyle="bold"
                         android:layout_marginStart="8dp"
                         android:layout_marginEnd="8dp"
-                        android:paddingHorizontal="48dp" />
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:paddingHorizontal="48dp"
+                        android:textColor="@color/black"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/black"
+                        app:elevation="2dp"
+                        android:backgroundTint="#ffa500"/>
 
                     <Button
                         android:id="@+id/btnReportIssue"
@@ -57,10 +136,16 @@
                         android:layout_height="wrap_content"
                         android:text="Report an issue"
                         android:textSize="18sp"
-                        android:textStyle="bold"
                         android:layout_marginStart="8dp"
                         android:layout_marginEnd="8dp"
-                        android:paddingHorizontal="48dp" />
+                        android:layout_marginBottom="16dp"
+                        android:paddingHorizontal="48dp"
+                        android:textColor="@color/black"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/black"
+                        app:elevation="2dp"
+                        android:backgroundTint="#ff3823"/>
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -69,13 +154,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                app:cardElevation="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
                 app:cardBackgroundColor="@color/white">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:layout_marginTop="16dp">
 
                     <TextView
                         android:id="@+id/homeRewardCardTextView"
@@ -83,7 +172,9 @@
                         android:layout_height="wrap_content"
                         android:text="Reward Progress"
                         android:textSize="16dp"
-                        android:textAlignment="center" />
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="16dp"/>
 
                     <com.google.android.material.progressindicator.CircularProgressIndicator
                         android:id="@+id/rewardProgress"
@@ -102,9 +193,16 @@
                         android:layout_height="wrap_content"
                         android:text="View Rewards"
                         android:textSize="18sp"
-                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:backgroundTint="#ffa500"
                         android:layout_marginStart="8dp"
                         android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        style="?attr/materialButtonOutlinedStyle"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/black"
+                        app:elevation="2dp"
                         android:paddingHorizontal="48dp" />
 
                 </LinearLayout>

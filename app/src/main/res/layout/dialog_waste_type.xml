@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#33FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Waste Type"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button_general_waste"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#ffa500"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/black"
+        app:elevation="2dp"
+        android:text="General Waste" />
+
+    <Button
+        android:id="@+id/button_glass"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:text="Glass"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/black"
+        app:elevation="2dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#ffa500"/>
+
+    <Button
+        android:id="@+id/button_plastic"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#ffa500"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/black"
+        app:elevation="2dp"
+        android:text="Plastic" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#ffa500"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/black"
+        app:elevation="2dp"
+        android:text="Cancel" />
+
+</LinearLayout>

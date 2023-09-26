@@ -3,25 +3,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#cbe8ba">
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Email" />
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="textPassword"
         android:layout_marginTop="16dp"
         android:hint="Password" />
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
         android:layout_marginTop="36dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#ffa500"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/black"
+        app:elevation="2dp"
         android:text="Login" />
 </LinearLayout>

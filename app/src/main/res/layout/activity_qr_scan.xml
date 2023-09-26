@@ -3,17 +3,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <ImageView
-        android:id="@+id/map_placeholder2"
-        android:layout_width="match_parent"
-        android:layout_height="750dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/map2" />
-
+        android:id="@+id/qr_code_scanner_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/picture_square"
+        android:layout_centerInParent="true" />
 
     <LinearLayout
         android:id="@+id/button_layout"
@@ -26,35 +24,27 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp">
 
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="TIP: Make sure the code is clearly visible"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:drawableLeftCompat="@drawable/lightbulb" />
         <Button
-            android:id="@+id/btnFindBin"
+            android:id="@+id/btnAddCodeManually"
             android:layout_width="288dp"
             android:layout_height="50dp"
-            android:text="Find a bin"
-            android:textSize="16dp"
+            android:text="Add Code Manually"
+            android:layout_marginBottom="8dp"
             style="?attr/materialButtonOutlinedStyle"
             app:strokeWidth="1dp"
             app:strokeColor="@color/black"
             app:elevation="2dp"
-            android:textColor="@color/black"
             android:backgroundTint="#ffa500"
-            android:layout_marginBottom="8dp"/>
-
-        <Button
-            android:id="@+id/btnScanCode"
-            android:layout_width="288dp"
-            android:layout_height="50dp"
-            android:textSize="16dp"
-            style="?attr/materialButtonOutlinedStyle"
-            app:strokeWidth="1dp"
-            app:strokeColor="@color/black"
-            app:elevation="2dp"
             android:textColor="@color/black"
-            android:backgroundTint="#ffa500"
-            android:text="Scan a code"/>
-
+            android:layout_alignParentBottom="true"/>
     </LinearLayout>
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
