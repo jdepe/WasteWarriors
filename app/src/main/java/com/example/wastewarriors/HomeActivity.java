@@ -20,6 +20,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.progressindicator.CircularProgressIndicator;
 
+
+
 public class HomeActivity extends AppCompatActivity {
     private ImageView mapImageView;
     private Button findBinButton, reportIssueButton, viewRewardsButton, routesButton, faultsButton;
@@ -33,6 +35,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
 
         setViewIds();
 
@@ -58,7 +61,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
         findBinButton.setOnClickListener(view -> {
-            Intent intent = new Intent(HomeActivity.this, FindBinActivity.class);
+            Intent intent = new Intent(HomeActivity.this, FindBinActivity.class); //MAPS ACTIVITY BUTTON
             startActivity(intent);
         });
 

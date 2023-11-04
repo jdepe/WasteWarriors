@@ -21,7 +21,7 @@ public class BinLocationActivity extends AppCompatActivity {
         binAdapter = new BinAdapter(binList);
         recyclerView.setAdapter(binAdapter);
     }
-    // Replace this method with your actual vehicle data
+    // Replace this method with your actual bin data
     private ArrayList<Bin> generateDummyData() {
         ArrayList<Bin> binList = new ArrayList<>();
         binList.add(new Bin("B123", "Jaden", "Josh"));
